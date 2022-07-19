@@ -10,10 +10,12 @@ import { Cliente } from '../interface/cliente';
 })
 export class ContenidoComponent implements OnInit {
   clientes:Cliente[]=[];
+  imagenSrc:string="";
 
   constructor(private servicio:ClienteService) { }
 
   ngOnInit(): void {
+    this.imagenSrc='assets/avatar.jpg';
 
     this.servicio.getCliente().subscribe(
       resp => this.clientes=resp

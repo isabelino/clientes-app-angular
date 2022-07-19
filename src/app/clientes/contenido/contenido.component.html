@@ -13,7 +13,14 @@
   </thead>
   <tbody>
     <tr *ngFor="let item of clientes">
-      <th scope="row">{{item.id}}</th>
+     <!-- <th scope="row">{{item.id}}</th>-->
+     <td>
+      <img name="image1" *ngIf="!item.imagen" src="{{imagenSrc}}" alt="default" style="width:64px;"
+      class="img-thumbnail rounded">
+      <img name="image2" *ngIf="item.imagen" src="http://localhost:8087/api/uploads/img/{{item.imagen}}" alt="{{item.imagen}}" alt="default" style="width:64px;"
+      class="img-thumbnail rounded">
+
+     </td>
       <td>{{item.nombre}}</td>
       <td>{{item.apellido}}</td>
       <td>{{item.email}}</td>

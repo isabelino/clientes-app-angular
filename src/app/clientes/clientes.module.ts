@@ -4,6 +4,7 @@ import { DetalleComponent } from './detalle/detalle.component';
 import { ContenidoComponent } from './contenido/contenido.component';
 import { FormComponent } from './form/form.component';
 import { AppRoutingModule } from '../app-routing/app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -20,7 +21,8 @@ import { AppRoutingModule } from '../app-routing/app-routing.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ]
 })
 export class ClientesModule { }
