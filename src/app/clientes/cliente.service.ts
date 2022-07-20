@@ -9,7 +9,7 @@ import { Region } from './interface/region';
 })
 export class ClienteService {
 
-  urlBase:string="http://localhost:8087/api"
+  urlBase:string="http://localhost:8087/api";
 
   constructor(private http:HttpClient) { }
 //el metodo get para recuperar todos los clientes

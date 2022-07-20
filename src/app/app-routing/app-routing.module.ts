@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContenidoComponent } from '../clientes/contenido/contenido.component';
 import { DetalleComponent } from '../clientes/detalle/detalle.component';
 import { FormComponent } from '../clientes/form/form.component';
+import { TablaRegionComponent } from '../regiones/tabla-region/tabla-region.component';
 
 const routes: Routes = [
  {
@@ -25,6 +26,10 @@ const routes: Routes = [
  {
   path:'clientes/ver/:id',
   component:DetalleComponent
+ },
+ {
+  path:'clientes/regiones',
+  component:TablaRegionComponent
  },
  {
   path:'**',

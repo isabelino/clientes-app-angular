@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterLink, RouterModule } from '@angular/router';
+import { RegionesModule } from './regiones/regiones.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RouterLink, RouterModule } from '@angular/router';
     AppRoutingModule,
     ClientesModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    RegionesModule
 
   ],
   providers: [],
